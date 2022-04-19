@@ -125,7 +125,7 @@
       background-color: white;
       width: 185px;
       padding: 50px;
-      gap: 50px;
+      gap: 10px;
   }
 
   .game-side-bar-item {
@@ -142,19 +142,22 @@
   }
 
   .side-bar-title {
+    display: grid;
+    grid-template-columns: 20px 100px;
     color: #a1a1aa;
+    font-size: 20px;
+    gap: 5px;
   }
 
   .side-bar-crew {
       display: grid;
-      grid-template-columns: 100px 20px;
+      grid-template-columns: 40px 80px 20px;
       padding: 10px;
-      gap: 10px;
   }
 
   .side-bar-inventory {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 40px 150px;  
     padding: 10px;
   }
 
@@ -164,7 +167,10 @@
   }
 
   .inventory-sell-button {
+        display: flex;
+        flex-direction: row;
         color: #4ade80;
+        text-decoration: none;
   }
 
   .side-bar-text {
@@ -175,14 +181,42 @@
     color: #a1a1aa;
   }
 
+  .side-bar-actions {
+    display: grid;
+    grid-template-columns: 40px 150px;  
+    padding: 10px; 
+  }
+
 
 
 .side-bar-button {
+  display: flex;
+  felx-direction: row;
   background-color: #e4e4e7;
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 10px;
-  text-align: center;
+  padding-left: 10%;
   margin: 20px;
   margin-top: auto;
+  gap: 5px;
+}
+
+.side-bar-button:hover {
+    opacity: 0.75;
+}
+
+#inventory-logo {
+    height: 20px; 
+
+}
+
+#char-face {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+  }
+
+#money {
+    height: 19px;
 }
   
