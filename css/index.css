@@ -24,6 +24,8 @@
 
 .navbar-links > * {
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 .navbar-mid-items > * {
