@@ -110,13 +110,15 @@
     grid-template-rows: 75px 75px 75px 75px 75px 75px 75px;
     background-color: #F4F4F5;
     gap: 1px;
+    width: 100%;
+    justify-content: center;
   }
 
   .grid-item {
     background-color: #2563EB;
     padding: 20px;
     font-size: 10px;
-    text-align: bottom-right;
+    justify-text: right;
   }
 
   .game-side-bar-container {
@@ -126,6 +128,7 @@
       width: 185px;
       padding: 50px;
       gap: 10px;
+      margin-left: auto;
   }
 
   .game-side-bar-item {
