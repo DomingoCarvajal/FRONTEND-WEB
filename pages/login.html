@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="../css/base.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="../css/login.css" type="text/css" charset="utf-8" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div id="image-container">
+          <img src="../images/login.png" />
+        </div>
+        <div class="form-container">
+          <div class="title-container">
+            <span class="title">One Piece</span>
+            <span class="subtitle">Lorem ipsum. Aqui va el slogan.</span>
+          </div>
+          <form>
+            <span id="form-title">Iniciar sesión</span>
+            <div id="line-break"></div>
+            <div class="input-fields">
+              <input class="text-input" type="text" id="username" placeholder="Username" />
+              <input class="text-input" type="text" id="password" placeholder="Password" />
+              <div id="login-section">
+                <span id="remember-me-container">
+                  <input type="checkbox" id="remember-me" checked />
+                  <label for="remember-me">Recordarme</label>
+                </span>
+                <a href="/pages/register.html">Olvidé mi contraseña</a>
+              </div>
+              <button ="" class="login-btn">Iniciar sesión</button>
+              <button class="register-btn">Registrarme</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-container invisible">
+        <div class="modal-background"></div>
+        <div class="modal">
+          <span>Aun no tenemos backend :(</span>
+          <button class="main-btn modal-btn">Ok</button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const modal = document.querySelector('.modal-container');
+
+    const loginBtn = document.querySelector('.login-btn');
+    const registerBtn = document.querySelector('.register-btn');
+    [loginBtn, registerBtn].forEach(btn => {
+      btn.onclick = e => {
+        e.preventDefault();
+        modal.classList.remove('invisible');
+      };
+    });
+
+    const modalBtn = document.querySelector('.modal-btn');
+    modalBtn.onclick = () => {
+      modal.classList.add('invisible');
+    };
+  </script>
+</html>

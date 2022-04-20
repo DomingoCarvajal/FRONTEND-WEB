@@ -1,0 +1,166 @@
+.text-input {
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  outline: 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-container > * {
+  margin-top: 2rem;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: (--blue-gray-50);
+}
+
+.content {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+#image-container {
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: (--gray-100);
+  padding: 2rem 5rem;
+}
+
+#image-container img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.form-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+
+.form-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container > * {
+  margin-top: 3rem;
+}
+
+#form-title {
+  font-size: 1.75rem;
+  line-height: 2.75rem;
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+}
+
+#line-break {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#remember-me-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.login-btn {
+  background-color: #9ca3af;
+  color: #f9fafb;
+}
+
+.register-btn {
+  background-color: #f9fafb;
+  color: #9ca3af;
+}
+
+#login-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-fields > * {
+  margin-top: 1rem;
+}
+
+.modal-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(10, 10, 10, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  height: 12rem;
+  border-radius: 0.5rem;
+  display: flex;
+  padding: 1rem;
+  background-color: white;
+}
+
+.modal > span {
+  align-self: center;
+}
+
+.modal > button {
+  align-self: end;
+  margin-top: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}

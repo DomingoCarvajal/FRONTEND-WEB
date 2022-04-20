@@ -1,5 +1,7 @@
 :root {
   --main-color: #3b82f6;
+  --blue-gray-50: #f8fafc;
+  --gray-100: #f4f4f5;
 }
 
 body,
@@ -20,8 +22,20 @@ html {
   border-style: none;
   background-color: var(--main-color);
   border-radius: 999px;
+  cursor: pointer;
 }
 
 .main-btn:hover {
   opacity: 0.75;
+}
+
+form > div > button {
+  width: 100%;
+  text-align: center;
+  border-radius: 0.25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  border-style: none;
+  outline: 0;
+  cursor: pointer;
 }
