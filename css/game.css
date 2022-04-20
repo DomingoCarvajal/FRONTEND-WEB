@@ -222,4 +222,10 @@
 #money {
     height: 19px;
 }
+
+#crew-bar {
+  height: 40px;
+  width: 100px;
+  align-self: center;
+}
   
