@@ -175,9 +175,9 @@
             const nav = document.querySelector(".nav");
             var nav_hidden = false;
 
-            document.addEventListener('keypress', logKey);
+            document.addEventListener('keypress', hideNav);
 
-            function logKey(e) {
+            function hideNav(e) {
                 if ("KeyH" == e.code) {
                     if (nav_hidden == false) {
                         nav.classList.add("invisible-navbar");
