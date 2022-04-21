@@ -1,4 +1,4 @@
-# s2-grupo-selecci-n-de-waterpolo-2008
+# Selección Water Polo 2008
 
 ## Entrega 2
 
