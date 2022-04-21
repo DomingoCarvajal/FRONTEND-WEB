@@ -13,8 +13,10 @@
 
     <body>
 
-        <nav id="navbar">
+        <nav id="navbar" class="nav">
+            <a href="../index.html" >
             <img src="/images/one-piece-logo.png" id="logo" />
+            </a>
             <div class="navbar-mid-items navbar-links">
               <a href="instructions.html" >Reglas</a>
               <a href="aboutus.html">Créditos</a>
@@ -167,4 +169,26 @@
     </div>
     </body>
       
+    <script>
+        // Enable hidden nav bar
+        {
+            const nav = document.querySelector(".nav");
+            var nav_hidden = false;
+
+            document.addEventListener('keypress', logKey);
+
+            function logKey(e) {
+                if ("KeyH" == e.code) {
+                    if (nav_hidden == false) {
+                        nav.classList.add("invisible-navbar");
+                        nav_hidden = true;
+                    } else {
+                        nav.classList.remove("invisible-navbar");
+                        nav_hidden = false;
+                    }
+                }
+            }
+        }
+    </script>
+
 </html>

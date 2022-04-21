@@ -123,4 +123,8 @@
   width: 100px;
   align-self: center;
 }
-  
+
+.invisible-navbar {
+  visibility: hidden;
+  height: 0;
+  }
