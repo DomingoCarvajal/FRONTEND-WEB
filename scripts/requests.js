@@ -7,11 +7,14 @@ const span = document.getElementById('response-span');
 
 async function createUser(){
     const email = document.getElementById("create-email").value;
+    const password = document.getElementById("create-password").value;
+    const fname = document.getElementById("create-fname").value;
+    const lname = document.getElementById("create-lname").value;
     dataSignUp = {
         email,
-        password: "123456",
-        firstName: "nombre",
-        lastName: "apellido"
+        password,
+        firstName: fname,
+        lastName: lname
     }
 
     const userCreated = await fetch(`${url}/api/users`, {
@@ -24,19 +27,20 @@ async function createUser(){
             return respuesta.json()
         });  
 
-    const token = await getToken(email);
+    const token = await getToken(email, password);
 }
 
 async function loginUser(){
     const email = document.getElementById("login-email").value;
-    const token = await getToken(email);
+    const password = document.getElementById("login-password").value;
+    const token = await getToken(email, password);
 }
 
 
-async function getToken(email){
+async function getToken(email, password){
     dataLogIn = {
         email,
-        password: "123456"
+        password
     }
 
     const tokenCreated = await fetch(`${url}/api/sessions`, {
@@ -44,7 +48,7 @@ async function getToken(email){
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(dataLogIn)
         }).then(respuesta => {
-            console.log(respuesta.statusText)
+            span.textContent = respuesta.statusText;
             return respuesta.text()
         });
     console.log(tokenCreated);
